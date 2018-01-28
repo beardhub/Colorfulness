@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>
+document.addEventListener("mousemove",function(e){
+	document.body.style.backgroundColor = "rgb("+
+		[Math.round(e.clientX/window.innerWidth*255),
+		 Math.round(e.clientY/window.innerHeight*255),
+		 150].join(",")+")";
+});
+</script>
+</body>
+</html>
